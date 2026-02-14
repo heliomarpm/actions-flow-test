@@ -1,0 +1,6 @@
+{
+  "default": "success",
+  "no-tests": "success",
+  "coverage-block": "success",
+  "coverage-decrease": "failure"
+}
