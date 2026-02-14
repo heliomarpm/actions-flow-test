@@ -38,7 +38,7 @@ jobs:
 
     with:
       project_path: fixtures/${{ matrix.fixture }}
-      coverage-mode: ${{ matrix.scenario == 'coverage-block' && 'block' || matrix.scenario == 'coverage-decrease' && 'decrease' || 'info' }}
+      coverage_mode: ${{ matrix.scenario == 'coverage-block' && 'block' || matrix.scenario == 'coverage-decrease' && 'decrease' || 'info' }}
 # jobs:
   # test:
   #   runs-on: ubuntu-latest
