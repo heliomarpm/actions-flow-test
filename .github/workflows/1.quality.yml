@@ -39,26 +39,27 @@ jobs:
         working-directory: fixtures/${{ matrix.fixture }}/actions/quality
 
     steps:
-    # - uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
-    # - name: Setup Node
-    #   uses: actions/setup-node@v4
-    #   with:
-    #     node-version: 20
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
 
-    # - name: Load fixture config
-    #   run: |
-    #     if [ -f fixture.env ]; then
-    #       cat fixture.env >> $GITHUB_ENV
-    #     fi
+    - name: Load environment
+      run: |
+
+        if [ -f "${{ matrix.scenario }}/.env" ]; then
+          cat .env >> $GITHUB_ENV
+        fi
 
     - name: Run Quality Workflow
       uses: heliomarpm/actions-flow/.github/workflows/ci-quality-gate.yml@main
       with:
         project_path: fixtures/${{ matrix.fixture }}
         coverage_mode: ${{ matrix.scenario == 'coverage-block' && 'block' || matrix.scenario == 'coverage-decrease' && 'decrease' || 'info' }}
-        # coverage_strategy: ${{ vars.COVERAGE_STRATEGY }}
-        # coverage_command: ${{ vars.COVERAGE_COMMAND }}
+        coverage_strategy: ${{ vars.COVERAGE_STRATEGY }}
+        coverage_command: ${{ vars.COVERAGE_COMMAND }}
 
     - name: Validate contract
       run: |
