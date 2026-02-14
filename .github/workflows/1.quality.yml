@@ -27,6 +27,7 @@ jobs:
           # - python-no-tests # deve falhar
           # - dotnet-no-tests # deve falhar
           # - go-no-tests # deve falhar
+
         scenario:
           - default
           - no-tests
