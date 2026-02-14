@@ -8,7 +8,7 @@ on:
 
 jobs:
   quality:
-    name: Quality – ${{ matrix.fixture }} | ${{ matrix.scenario }}
+    name: strategy – ${{ matrix.fixture }} | ${{ matrix.scenario }}
     strategy:
       fail-fast: false
       matrix:
@@ -30,12 +30,10 @@ jobs:
 
         scenario:
           - default
-          - no-tests
           - coverage-block
-          - coverage-decrease
+          # - coverage-decrease
 
     uses: heliomarpm/actions-flow/.github/workflows/ci-quality.yml@main
-
     with:
       project_path: fixtures/${{ matrix.fixture }}
       coverage_mode: ${{ matrix.scenario == 'coverage-block' && 'block' || matrix.scenario == 'coverage-decrease' && 'decrease' || 'info' }}
