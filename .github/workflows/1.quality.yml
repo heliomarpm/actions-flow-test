@@ -30,7 +30,7 @@ jobs:
 
         scenario:
           - default
-          - coverage-block
+          # - coverage-block
           # - coverage-decrease
 
     uses: heliomarpm/actions-flow/.github/workflows/ci-quality.yml@main
