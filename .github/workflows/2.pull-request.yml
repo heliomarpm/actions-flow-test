@@ -3,7 +3,7 @@ description: "Automated CD for the ACTIONS-FLOW project"
 
 on:
   workflow_run:
-    workflows: ["1. Quality Assurance"]
+    workflows: ["🧪 Contract Tests – Reusable Actions"]
     types:
       - completed
   # push:
