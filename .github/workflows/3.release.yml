@@ -7,6 +7,6 @@ on:
 
 jobs:
   app:
-    uses: heliomarpm/reusable-actions/.github/workflows/cd-semantic-release.yml@main
+    uses: heliomarpm/actions-flow/.github/workflows/cd-semantic-release.yml@main
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}   
