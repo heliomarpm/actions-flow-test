@@ -1,0 +1,8 @@
+{
+  "name": "fixture/php-no-tests",  
+  "description": "PHP fixture without tests",
+  "version": "0.0.1",
+  "require": {
+    "php": ">=8.2"
+  }
+}
