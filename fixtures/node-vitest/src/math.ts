@@ -47,3 +47,12 @@ export function square(a: number): number {
 export function cube(a: number): number {
   return a * a * a
 }
+
+/**
+ * Returns the square root of a given number.
+ * @param {number} a The number to take the square root of.
+ * @returns {number} The square root of the given number.
+ */
+export function sqrt(a: number): number {
+  return Math.sqrt(a)
+}
