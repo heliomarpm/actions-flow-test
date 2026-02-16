@@ -10,6 +10,12 @@ export function multiply(a: number, b: number): number {
   return a * b
 }
 
+/**
+ * Returns the result of dividing a by b.
+ * @param {number} a The dividend.
+ * @param {number} b The divisor.
+ * @returns {number} The result of dividing a by b.
+ */
 export function divide(a: number, b: number): number {
   return a / b
 }
