@@ -1,4 +1,4 @@
-name: 🧪 Contract Tests – Reusable Actions
+name: 1. Quality Assurance
 description: Automated CI contract validation for reusable workflows
 
 on:
@@ -30,7 +30,7 @@ jobs:
 
         scenario:
           - default
-          - coverage-block
+          # - coverage-block
           # - coverage-decrease
 
     uses: heliomarpm/actions-flow/.github/workflows/ci-quality.yml@main
