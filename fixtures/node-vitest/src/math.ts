@@ -18,10 +18,20 @@ export function power(a: number, b: number): number {
   return a ** b
 }
 
+/**
+ * Returns the square of a given number.
+ * @param {number} a The number to be squared.
+ * @returns {number} The square of the given number.
+ */
 export function square(a: number): number {
   return a * a
 }
 
+/**
+ * Returns the cube of a given number.
+ * @param {number} a The number to be cubed.
+ * @returns {number} The cube of the given number.
+ */
 export function cube(a: number): number {
   return a * a * a
 }
