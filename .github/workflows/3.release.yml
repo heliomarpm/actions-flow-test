@@ -13,6 +13,7 @@ jobs:
       matrix:
         fixture:
           - node-vitest
+          - php-no-tests
           # - node-custom-ok
           # - node-custom-no-summary
           # - node-runner-missing
