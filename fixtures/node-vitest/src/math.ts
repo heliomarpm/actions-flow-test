@@ -14,6 +14,12 @@ export function divide(a: number, b: number): number {
   return a / b
 }
 
+/**
+ * Returns a to the power of b.
+ * @param {number} a The base.
+ * @param {number} b The exponent.
+ * @returns {number} The result of a to the power of b.
+ */
 export function power(a: number, b: number): number {
   return a ** b
 }
