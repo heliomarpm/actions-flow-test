@@ -6,7 +6,34 @@ on:
       - main
 
 jobs:
-  app:
+  release:
+    name: strategy – ${{ matrix.fixture }} | ${{ matrix.scenario }}
+    strategy:
+      fail-fast: false
+      matrix:
+        fixture:
+          - node-vitest
+          # - node-custom-ok
+          # - node-custom-no-summary
+          # - node-runner-missing
+          # - node-jest
+          # - php-phpunit
+          # - python-pytest
+          # - dotnet-xunit
+          # - go
+          # - node-no-tests # deve falhar
+          # - php-no-tests  # deve falhar
+          # - python-no-tests # deve falhar
+          # - dotnet-no-tests # deve falhar
+          # - go-no-tests # deve falhar
+
+        scenario:
+          - default
+          # - coverage-block
+          # - coverage-decrease
+  
     uses: heliomarpm/actions-flow/.github/workflows/cd-semantic-release.yml@main
     secrets:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}   
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    with:
+      project_path: fixtures/${{ matrix.fixture }}
