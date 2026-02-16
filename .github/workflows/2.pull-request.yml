@@ -3,7 +3,7 @@ description: "Automated CD for the ACTIONS-FLOW project"
 
 on:
   workflow_run:
-    workflows: ["🧪 Contract Tests – Reusable Actions"]
+    workflows: ["1. Quality Assurance"]
     types:
       - completed
   # push:
@@ -26,6 +26,3 @@ jobs:
     uses: heliomarpm/actions-flow/.github/workflows/cd-pull-request.yml@main
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    # with:
-    #   coverage_min: 85
-    #   coverage_mode: info
