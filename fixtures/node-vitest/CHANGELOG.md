@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/heliomarpm/actions-flow-test/compare/v1.0.0...v1.1.0) (2026-02-16)
+
+
+### Features
+
+* **math:** ✨ adicionar função `sqrt` para cálculo de raiz quadrada ([8f7f77c](https://github.com/heliomarpm/actions-flow-test/commit/8f7f77ce69f0bf24ee0ce84af8b5ac2487dd9cfb))
+
 # 1.0.0 (2026-02-16)
 
 
