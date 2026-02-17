@@ -6,6 +6,12 @@ export function subtract(a: number, b: number): number {
   return a - b
 }
 
+/**
+ * Returns the product of two numbers.
+ * @param {number} a The first factor.
+ * @param {number} b The second factor.
+ * @returns {number} The product of the two given numbers.
+ */
 export function multiply(a: number, b: number): number {
   return a * b
 }
