@@ -1,5 +1,5 @@
 name: 2. Pull Requests Tests
-description: "Automated CD for the ACTIONS-FLOW project"
+run-name: PR ${{ github.event.workflow_run.head_branch || github.head_ref || github.ref_name }} → ${{ github.base_ref }}
 
 on:
   workflow_run:
@@ -26,3 +26,8 @@ jobs:
     uses: heliomarpm/actions-flow/.github/workflows/cd-pull-request.yml@main
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    with:
+      pr_body: >
+        🚀 Pull Request Automatizado
+        ---
+        {{QUALITY_GATE_RESULT}}
