@@ -27,7 +27,7 @@ jobs:
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     with:
-      pr_body: >
+      pr_body: |
         🚀 Pull Request Automatizado
         ---
         {{QUALITY_GATE_RESULT}}
