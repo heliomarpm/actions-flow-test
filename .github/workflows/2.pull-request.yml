@@ -1,5 +1,5 @@
 name: 2. Pull Requests Tests
-run-name: PR ${{ github.event.workflow_run.head_branch || github.head_ref || github.ref_name }} → ${{ github.base_ref }}
+run-name: 2. Pull Request from ${{ github.event.workflow_run.head_branch || github.head_ref || github.ref_name }} → ${{ github.base_ref }}
 
 on:
   workflow_run:
