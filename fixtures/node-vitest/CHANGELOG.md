@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/heliomarpm/actions-flow-test/compare/v1.2.1...v1.3.0) (2026-02-18)
+
+
+### Features
+
+* **math:** ✨ adicionar função `abs` para valor absoluto ([36835a1](https://github.com/heliomarpm/actions-flow-test/commit/36835a1ed22aa08724ed8795766b93b4523ddb60))
+
 # [1.1.0](https://github.com/heliomarpm/actions-flow-test/compare/v1.0.0...v1.1.0) (2026-02-16)
 
 
