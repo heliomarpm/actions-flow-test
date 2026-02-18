@@ -68,3 +68,12 @@ export function cube(a: number): number {
 export function sqrt(a: number): number {
   return Math.sqrt(a)
 }
+
+/**
+ * Returns the absolute value of a given number.
+ * @param {number} a The number to get the absolute value of.
+ * @returns {number} The absolute value of the given number.
+ */
+export function abs(a: number): number {
+  return Math.abs(a)
+}
