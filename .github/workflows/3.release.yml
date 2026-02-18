@@ -38,3 +38,4 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     with:
       project_path: fixtures/${{ matrix.fixture }}
+      commit_strict_mode: false
