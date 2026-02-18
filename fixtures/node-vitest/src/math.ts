@@ -2,10 +2,22 @@ export function sum(a: number, b: number): number {
   return a + b
 }
 
+/**
+ * Returns the difference of two numbers.
+ * @param {number} a The minuend.
+ * @param {number} b The subtrahend.
+ * @returns {number} The difference of the two given numbers.
+ */
 export function subtract(a: number, b: number): number {
   return a - b
 }
 
+/**
+ * Returns the product of two numbers.
+ * @param {number} a The first factor.
+ * @param {number} b The second factor.
+ * @returns {number} The product of the two given numbers.
+ */
 export function multiply(a: number, b: number): number {
   return a * b
 }
