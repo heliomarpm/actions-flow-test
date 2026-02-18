@@ -29,5 +29,5 @@ jobs:
     with:
       pr_body: |
         🚀 Pull Request Automatizado
-        ---
+        
         {{QUALITY_GATE_RESULT}}
