@@ -10,10 +10,18 @@ on:
   #   branches:
   #     - feature/**
   #     - develop
+  # push:
+  #   branches-ignore:
+  #     - main
+
+# concurrency:
+#   group: ${{ github.workflow }}-${{ github.ref }}
+#   cancel-in-progress: true
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: write       # → permite criar e atualizar tags, commits e pushes no repositório.
+  pull-requests: write  # → se precisar criar ou atualizar pull requests
+  checks: read          # → se precisar ler check runs
 
 jobs:
   app:  

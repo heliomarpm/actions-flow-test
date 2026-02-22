@@ -5,6 +5,17 @@ on:
     branches:
       - main
 
+# concurrency:
+#   group: ${{ github.workflow }}-${{ github.ref }}
+#   cancel-in-progress: true
+
+# permissions:
+#   contents: write # → permite criar e atualizar tags, commits e pushes no repositório.
+#   issues: write # (opcional) → se você quiser que o release crie comentários em issues.
+#   pull-requests: write # (opcional) → se quiser que o release comente em PRs.
+#   packages: write # (opcional) → se estiver publicando pacotes.
+#   repository-projects: write # (opcional) → se o release interagir com projetos.
+
 jobs:
   release:
     name: strategy – ${{ matrix.fixture }} | ${{ matrix.scenario }}
