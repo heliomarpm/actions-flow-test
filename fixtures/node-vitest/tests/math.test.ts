@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { sum, subtract, multiply } from '../src/math'
+import { sum, subtract, multiply, divide } from '../src/math'
 
 describe('math', () => {
   it('adds two numbers', () => {
@@ -35,4 +35,14 @@ describe('math', () => {
     expect(multiply(-4, 3)).toBe(-12)
     expect(multiply(-4, -3)).toBe(12)
   })
+
+  it('should divide two numbers correctly', () => {
+    expect(divide(10, 2)).toBe(5);
+    expect(divide(7, 3)).toBe(2.3333333333333335);
+    expect(divide(0, 5)).toBe(0);
+  });
+
+  it('should handle division by zero correctly', () => {
+    expect(() => divide(10, 0)).toThrow();
+  });
 })
