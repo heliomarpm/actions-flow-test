@@ -1,3 +1,10 @@
+
+/**
+ * Returns the sum of two numbers.
+ * @param {number} a The first addend.
+ * @param {number} b The second addend.
+ * @returns {number} The sum of the two given numbers.
+ */
 export function sum(a: number, b: number): number {
   return a + b
 }
