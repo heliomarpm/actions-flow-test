@@ -36,7 +36,7 @@ jobs:
     uses: heliomarpm/actions-flow/.github/workflows/ci-quality.yml@main
     with:
       project_path: fixtures/${{ matrix.fixture }}
-      coverage_mode: ${{ matrix.scenario == 'coverage-block' && 'block' || matrix.scenario == 'coverage-decrease' && 'decrease' || 'info' }}
+      coverage_strict_mode: ${{ matrix.scenario == 'coverage-block' && 'block' || matrix.scenario == 'coverage-decrease' && 'decrease' || 'info' }}
 # jobs:
   # test:
   #   runs-on: ubuntu-latest
