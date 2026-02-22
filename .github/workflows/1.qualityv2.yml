@@ -33,7 +33,7 @@ jobs:
           # - coverage-block
           # - coverage-decrease
 
-    uses: heliomarpm/lab-workflowsflow/.github/workflows/ci-quality.yml@main
+    uses: heliomarpm/lab-workflows/.github/workflows/ci-quality.yml@main
     with:
       project_path: fixtures/${{ matrix.fixture }}
       coverage_strict_mode: ${{ matrix.scenario == 'coverage-block' && 'block' || matrix.scenario == 'coverage-decrease' && 'decrease' || 'info' }}
