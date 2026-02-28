@@ -87,3 +87,13 @@ export function sqrt(a: number): number {
 export function abs(a: number): number {
   return Math.abs(a)
 }
+
+/**
+ * Returns the minimum of two numbers.
+ * @param {number} a The first number.
+ * @param {number} b The second number.
+ * @returns {number} The minimum of the two given numbers.
+ */
+export function min(a: number, b: number): number {
+  return Math.min(a, b);
+} 
