@@ -1,4 +1,4 @@
-name: 1. Quality Assurance
+name: 1. Quality Assurance v2
 description: Automated CI contract validation for reusable workflows
 
 on:
