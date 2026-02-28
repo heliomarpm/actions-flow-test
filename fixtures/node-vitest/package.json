@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "vitest run",
-    "coverage": "vitest run --coverage"
+    "cov": "vitest run --coverage"
   },
   "devDependencies": {
     "@vitest/coverage-v8": "^4.0.18",

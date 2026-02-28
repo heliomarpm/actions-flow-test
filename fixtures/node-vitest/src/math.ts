@@ -1,3 +1,10 @@
+
+/**
+ * Returns the sum of two numbers.
+ * @param {number} a The first addend.
+ * @param {number} b The second addend.
+ * @returns {number} The sum of the two given numbers.
+ */
 export function sum(a: number, b: number): number {
   return a + b
 }
@@ -29,6 +36,9 @@ export function multiply(a: number, b: number): number {
  * @returns {number} The result of dividing a by b.
  */
 export function divide(a: number, b: number): number {
+  if (b === 0) {
+    throw new Error('Division by zero is not allowed')
+  }
   return a / b
 }
 
@@ -77,3 +87,13 @@ export function sqrt(a: number): number {
 export function abs(a: number): number {
   return Math.abs(a)
 }
+
+/**
+ * Returns the minimum of two numbers.
+ * @param {number} a The first number.
+ * @param {number} b The second number.
+ * @returns {number} The minimum of the two given numbers.
+ */
+export function min(a: number, b: number): number {
+  return Math.min(a, b);
+} 
