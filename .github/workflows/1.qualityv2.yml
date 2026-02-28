@@ -1,4 +1,4 @@
-name: 1. Quality Assurance
+name: 1. Quality Assurance v2
 description: Automated CI contract validation for reusable workflows
 
 on:
@@ -33,7 +33,7 @@ jobs:
           # - coverage-block
           # - coverage-decrease
 
-    uses: heliomarpm/actions-flow/.github/workflows/ci-quality.yml@main
+    uses: heliomarpm/lab-workflows/.github/workflows/ci-quality.yml@main
     with:
       project_path: fixtures/${{ matrix.fixture }}
       coverage_strict_mode: ${{ matrix.scenario == 'coverage-block' && 'block' || matrix.scenario == 'coverage-decrease' && 'decrease' || 'info' }}
