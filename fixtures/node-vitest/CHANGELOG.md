@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/heliomarpm/actions-flow-test/compare/v1.3.0...v1.4.0) (2026-02-28)
+
+
+### Features
+
+* **math:** ✨ adicionar função de divisão com tratamento de erro ([b385e61](https://github.com/heliomarpm/actions-flow-test/commit/b385e6124b8fa53735905b3851510631bb631802))
+
 # [1.3.0](https://github.com/heliomarpm/actions-flow-test/compare/v1.2.1...v1.3.0) (2026-02-18)
 
 
